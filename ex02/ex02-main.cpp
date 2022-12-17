@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int main_elem() {
     Elem e0 = {3, 5, nullptr};
     Elem e1 = {2, 6, &e0};
     Elem e2 = {1, 9, &e1};
