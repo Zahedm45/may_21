@@ -42,15 +42,44 @@ void displayField(Vector **A, unsigned int m, unsigned int n) {
 }
 
 // Task 1(c).  Implement this function
-void addFields(Vector **A, Vector **B, Vector **C,
-               unsigned int m, unsigned int n) {
+void addFields(Vector **A, Vector **B, Vector **C, unsigned int m, unsigned int n) {
     // Write your code here
+
+
+    for (int i = 0; i < m; ++i) {
+
+        for (int j = 0; j < n; ++j) {
+
+            Vector currA = A[i][j];
+            Vector currB = B[i][j];
+
+            int val_x = currA.x + currB.x;
+            int val_y = currA.y + currB.y;
+
+            C[i][j].x = val_x;
+            C[i][j].y = val_y;
+
+        }
+    }
+
+
+
+
 }
 
 // Task 1(d).  Implement this function
-void scaleField(Vector **A, double c,
-                unsigned int m, unsigned int n) {
+void scaleField(Vector **A, double c, unsigned int m, unsigned int n) {
     // Write your code here
+
+
+    for (int i = 0; i < m; ++i) {
+        for (int j = 0; j < n; ++j) {
+
+            A[i][j].x *= c;
+            A[i][j].y *= c;
+        }
+    }
+
 }
 
 // Do not modify
