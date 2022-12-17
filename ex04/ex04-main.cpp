@@ -2,7 +2,7 @@
 #include "ex04-library.h"
 using namespace std;
 
-/*int main4() {
+int main() {
     Buffer *b = new FilteringBuffer(-999);
 
     cout << "Current buffer occupancy: " << b->occupancy() << endl;
@@ -29,4 +29,4 @@ using namespace std;
     
     delete b;
     return 0;
-}*/
+}

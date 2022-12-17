@@ -2,7 +2,7 @@
 #include "ex03-library.h"
 using namespace std;
 
-int main() {
+int main_grocery() {
     GroceryList gl = GroceryList();
 
     cout << "Initial grocery list:" << endl;
