@@ -2,7 +2,7 @@
 #include "ex01-library.h"
 using namespace std;
 
-int main1() {
+int main() {
     Vector c = {1, 2};
     Vector d = {2, -2};
 
